@@ -24,7 +24,7 @@ class Solution {
                 return arr[mid];
             }
 
-            minm = Math.min(arr[l], Math.min(arr[mid], arr[r]));
+            minm = Math.min(arr[l], Math.min(arr[mid], arr[r]));        // min(arr[l], arr[mid], arr[r])
 
             // check mid lies on which partition
             if(arr[mid] <= arr[n-1]){
