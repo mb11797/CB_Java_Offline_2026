@@ -11,11 +11,18 @@ class Solution {
             List<String> tempRes = new ArrayList<>();
 
             // 2 -> "abc"; res = [""]
+            // 'a' -> [""] => newRes.add("" + 'a')
+            // 'b' -> [""] => newRes.add("" + 'b')
+            // 'c' -> [""] => newRes.add("" + 'c')
+            // newRes -> ["a","b","c"]
+            // res = newRes => res = ["a","b","c"]
             
             // 3 -> "def"; res = ["a", "b", "c"]
             // 'd' ->  ["a", "b", "c"] =>  newRes.add(["ad", "bd", "cd"])
             // 'e' ->  ["a", "b", "c"] =>  newRes.add(["ae", "be", "ce"])
             // 'f' ->  ["a", "b", "c"] =>  newRes.add(["af", "bf", "cf"])
+            // newRes -> ["ad", "bd", "cd", "ae", "be", "ce", "af", "bf", "cf"]
+            // res = newRes => res = ["ad", "bd", "cd", "ae", "be", "ce", "af", "bf", "cf"]
 
             // 4 -> "ghi"; res = ["ad", "bd", "cd", "ae", "be", "ce", "af", "bf", "cf"]
             // 'g' -> ["ad", "bd", "cd", "ae", "be", "ce", "af", "bf", "cf"] => newRes.add(["adg", "bdg", "cdg", "aeg", "beg", "ceg", "afg", "bfg", "cfg"])
