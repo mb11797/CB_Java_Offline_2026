@@ -142,12 +142,12 @@ public class HashMap<T,U> implements Map<T,U>{
 
 		double loadFactor = (1.0 * this.curMapSize) / this.tableSize;
 		if(loadFactor > 0.75){
-			printHashTable();
-			System.out.println();
+			// printHashTable();
+			// System.out.println();
 			rehash();
-			System.out.println();
-			printHashTable();
-			System.out.println();
+			// System.out.println();
+			// printHashTable();
+			// System.out.println();
 		}
 
 		return;
