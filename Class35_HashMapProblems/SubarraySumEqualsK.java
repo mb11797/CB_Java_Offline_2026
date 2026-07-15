@@ -2,7 +2,6 @@ class Solution {
     public int subarraySum(int[] nums, int k) {
         Map<Integer, Integer> prefixSumVsCountMap = new HashMap<>();
 
-        k = 0;
         int prefixSum = 0;
         prefixSumVsCountMap.put(0, 1);
 
